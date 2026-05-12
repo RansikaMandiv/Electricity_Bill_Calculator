@@ -3,6 +3,7 @@ U_P1,U_P2,U_P3,U_P4 = 15.00,18.00,20.00,25.00
 Rental = 300.00
 
 while True:
+    print("\n---------------New Bill--------------\n")
     C_Reading = float(input("Enter Current reading[To Exit Enter -1]: "))
     if C_Reading < 0:
         break
@@ -23,9 +24,16 @@ while True:
 
     G_Price = N_Price + Rental
     
+    print("\n--------------Price List--------------\n")
+    
+    print(f"Price for 0-60 Units:\t\t {U_P1}")
+    print(f"Price for 60-90 Units:\t\t {U_P2}")
+    print(f"Price for 90-120 Units:\t\t {U_P3}")
+    print(f"Price for 120+ Units:\t\t {U_P4}")
 
-    print(f"Units Consumed: {U_Count}")
-    print(f"Net Price for Units Consumed: {N_Price}")
-    print(f"Rental Charges: {Rental}")
-    print(f"Gross Price for Units Consumed: {G_Price}")
+    print("\n--------------Monthly Bill------------\n")
+    print(f"Units Consumed:\t\t\t\t {U_Count}")
+    print(f"Net Price for Units Consumed:\t\t Rs.{N_Price}")
+    print(f"Rental Charges:\t\t\t\t Rs.{Rental}")
+    print(f"Gross Price for Units Consumed:\t\t Rs.{G_Price}")
     
